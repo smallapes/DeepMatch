@@ -57,6 +57,7 @@ if __name__ == "__main__":
 
     import tensorflow as tf
 
+    print(tf.__version__ )
     if tf.__version__ >= '2.0.0':
         tf.compat.v1.disable_eager_execution()
     else:
@@ -82,6 +83,7 @@ if __name__ == "__main__":
 
     print(user_embs.shape)
     print(item_embs.shape)
+    print(86)
 
     # 5. [Optional] ANN search by faiss and evaluate the result
 
